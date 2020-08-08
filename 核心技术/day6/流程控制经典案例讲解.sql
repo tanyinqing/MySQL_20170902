@@ -28,3 +28,5 @@ BEGIN
 END $
 
 CALL test_randstr_insert(10)$
+
+SELECT * from stringcontent;

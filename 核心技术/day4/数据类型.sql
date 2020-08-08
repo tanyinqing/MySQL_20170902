@@ -30,6 +30,7 @@ tinyint、smallint、mediumint、int/integer、bigint
 */
 
 #1.如何设置无符号和有符号
+use myemployees;
 
 DROP TABLE IF EXISTS tab_int;
 CREATE TABLE tab_int(

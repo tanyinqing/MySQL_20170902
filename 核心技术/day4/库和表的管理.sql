@@ -168,15 +168,3 @@ CREATE TABLE copy4
 SELECT id,au_name
 FROM author
 WHERE 0;
-
-
-
-
-
-
-
-
-
-
-
-

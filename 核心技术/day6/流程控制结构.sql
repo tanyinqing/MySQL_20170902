@@ -63,8 +63,6 @@ BEGIN
 	ELSE SET ch='D';
 	END IF;
 	RETURN ch;
-	
-	
 END $
 
 SELECT test_if(87)$

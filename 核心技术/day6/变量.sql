@@ -94,7 +94,7 @@ SELECT @变量名;
 应用在 begin end中的第一句话
 */
 
-#①声明
+#①声明 declare
 DECLARE 变量名 类型;
 DECLARE 变量名 类型 【DEFAULT 值】;
 
@@ -118,6 +118,7 @@ SELECT 局部变量名;
 SET @m=1;
 SET @n=1;
 SET @sum=@m+@n;
+SELECT @sum;
 SELECT @sum;
 
 #局部变量
