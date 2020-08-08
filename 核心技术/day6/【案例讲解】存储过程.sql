@@ -47,11 +47,12 @@ BEGIN
 END $
 
 CALL test_pro5('柳岩',@str)$
-SELECT @str $
+SELECT @str $;
 
 
 
 #六、创建存储过程或函数，根据传入的条目数和起始索引，查询beauty表的记录
+	use girls;
 DROP PROCEDURE test_pro6$
 CREATE PROCEDURE test_pro6(IN startIndex INT,IN size INT)
 BEGIN

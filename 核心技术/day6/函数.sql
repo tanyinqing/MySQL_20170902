@@ -43,7 +43,7 @@ CREATE FUNCTION myf1() RETURNS INT
 BEGIN
 
 	DECLARE c INT DEFAULT 0;#定义局部变量
-	SELECT COUNT(*) INTO c#赋值
+	SELECT COUNT(*) INTO c  #赋值
 	FROM employees;
 	RETURN c;
 	
@@ -63,12 +63,12 @@ BEGIN
 	WHERE last_name = empName;
 	
 	RETURN @sal;
-END $
+END;
 
-SELECT myf2('k_ing') $
+SELECT myf2('Kochhar');
 
 #案例2：根据部门名，返回该部门的平均工资
-
+use myemployees;
 CREATE FUNCTION myf3(deptName VARCHAR(20)) RETURNS DOUBLE
 BEGIN
 	DECLARE sal DOUBLE ;
@@ -77,9 +77,9 @@ BEGIN
 	JOIN departments d ON e.department_id = d.department_id
 	WHERE d.department_name=deptName;
 	RETURN sal;
-END $
+END
 
-SELECT myf3('IT')$
+SELECT myf3('IT')
 
 #三、查看函数
 
@@ -96,9 +96,10 @@ BEGIN
 	DECLARE SUM FLOAT DEFAULT 0;
 	SET SUM=num1+num2;
 	RETURN SUM;
-END $
+END
 
-SELECT test_fun1(1,2)$
+SELECT test_fun1(1,2);
+SELECT test_fun1(3,2);
 
 
 
