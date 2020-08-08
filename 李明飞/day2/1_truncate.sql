@@ -1,0 +1,1 @@
+TRUNCATE db_day01.student;-- 截断  数据彻底清除 无法找回
